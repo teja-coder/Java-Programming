@@ -1,7 +1,8 @@
 package com.company;
 
 import java.util.Scanner;
-
+// Given an array of integers nums, return the number of good pairs
+// A pair (i,j) is said to be a good pair if nums[i]==nums[j] and i<j
 public class GoodPairs {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

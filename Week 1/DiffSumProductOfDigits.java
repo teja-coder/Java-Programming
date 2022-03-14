@@ -1,7 +1,7 @@
 package com.company;
 
 import java.util.Scanner;
-
+// Difference between the sum and product of digits of a number
 public class DiffSumProductOfDigits {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

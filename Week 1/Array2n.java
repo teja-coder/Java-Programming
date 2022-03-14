@@ -1,7 +1,8 @@
 package com.company;
 
 import java.util.Scanner;
-
+// Given the array consisting of 2n elements in the form [x1,x2,x3......xn,y1,y2,y3......yn]
+// Return the array in the form of [x1,y1,x2,y2...........xn,yn]
 public class Array2n {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
