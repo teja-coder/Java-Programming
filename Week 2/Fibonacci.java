@@ -10,15 +10,14 @@ public class Fibonacci {
         System.out.print("Enter n : ");
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
-        int k = n;
         int c = 0;
-        while(n-2>0){
+        while(n>0){
             c = a + b;
             a = b;
             b = c;
             n--;
         }
-        System.out.println("The fibonacci series  " + c);
+        System.out.println(n + "th number of the fibonacci series is " + c);
     }
 
 }
