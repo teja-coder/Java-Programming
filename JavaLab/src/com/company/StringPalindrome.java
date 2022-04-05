@@ -1,20 +1,15 @@
 package com.company;
 
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class StringPalindrome {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Enter a string : ");
-        String s = in.next();
         String rev="";
-        for (int i = s.length()-1; i >= 0; i--) {
-            rev += s.charAt(i);
+        for (int i = args[0].length()-1; i >= 0; i--) {
+            rev += args[0].charAt(i);
         }
-        if(s.equals(rev))
-            System.out.println(s + " is a palindrome");
+        if(args[0].equals(rev))
+            System.out.println(args[0] + " is a palindrome");
         else
-            System.out.println(s + " is not a palindrome");
+            System.out.println(args[0] + " is not a palindrome");
     }
 }

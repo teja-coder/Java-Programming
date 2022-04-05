@@ -1,12 +1,11 @@
 package com.company;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class KthSmallestELement {
     public static void main(String[] args) {
-        System.out.println("Enter the array size");
+        System.out.print("Enter the array size : ");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
@@ -18,6 +17,6 @@ public class KthSmallestELement {
         Arrays.sort(arr);
         System.out.println("Enter the value of k: ");
         int k = sc.nextInt();
-        System.out.print("The kth smallest element: " + arr[k]);
+        System.out.print("The kth smallest element: " + arr[k-1]);
     }
 }

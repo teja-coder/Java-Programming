@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class DiagnolsDifference {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter order of matrix : ");
         int n = sc.nextInt();
-
         int[][] arr = new int[n][n];
-        System.out.print("Enter the elements: ");
+        System.out.println("Enter the elements");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 arr[i][j] = sc.nextInt();
@@ -20,6 +20,6 @@ public class DiagnolsDifference {
                 d2 += arr[n-(i + 1)][i];
         }
 
-        System.out.println(Math.abs(d2 - d1));
+        System.out.println("The difference in diagnols is " + Math.abs(d2 - d1));
     }
 }

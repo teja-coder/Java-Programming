@@ -1,6 +1,5 @@
 package com.company;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class NegativeMoveToEnd {
@@ -13,12 +12,19 @@ public class NegativeMoveToEnd {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-
-        for (int i = 0; i < n; i++) {
-            if(i < 0){
-                //Arrays.
+        for (int i = 0, j = 0; i < n; i++) {
+            if(arr[i] < 0){
+                if(i!=j){
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+                j++;
             }
-
+        }
+        System.out.println("The new array is");
+        for (int i : arr) {
+            System.out.print(i + " ");
         }
     }
 }
