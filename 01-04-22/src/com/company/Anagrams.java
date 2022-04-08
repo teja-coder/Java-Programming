@@ -16,7 +16,7 @@ public class Anagrams {
         Arrays.sort(c2);
         System.out.println(Arrays.toString(c1));
         System.out.println(Arrays.toString(c2));
-        if(c1.equals(c2))
+        if(Arrays.equals(c1,c2))
             System.out.println(s1 + " and " + s2 + " are anagrams");
         else
             System.out.println(s1 + " and " + s2 + " are not anagrams");
