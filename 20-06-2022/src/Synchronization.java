@@ -1,6 +1,6 @@
 class Message{
     public synchronized void greet(String s){
-        for(int i=0;i<5;i++) {
+        for(int i=0;i<3;i++) {
             System.out.println("good morning");
             try {
                 Thread.sleep(1000);
